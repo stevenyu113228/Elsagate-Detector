@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Elsagate-Detector",
+  "description": "Detect and block Elsa Gate",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "http://127.0.0.1:5000/"
+  ],
+  "background": {
+    "scripts": ["bg.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "js": ["contentscript.js","jquery.js"],
+    "matches": [
+      "https://youtu.be/",
+      "https://www.youtube.com/*",
+      "https://youtube.com/*"
+    ],
+    "run_at": "document_start"
+  }
+  ]
+}
