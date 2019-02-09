@@ -294,7 +294,7 @@ Ref:
 ## 結論
 大概應該或許可能做出來ㄌ！
 - Demo影片：
-    - {%youtube uOqclDofASM %}
+    - [連結](https://www.youtube.com/watch?v=uOqclDofASM)
 
 ### 未來展望及繼續研究方向
 - 提高準確率
